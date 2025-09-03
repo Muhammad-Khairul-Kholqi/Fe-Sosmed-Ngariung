@@ -1,7 +1,8 @@
 'use client'
 
-import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { Mail, Lock, Eye, EyeOff } from "lucide-react";
 
 export default function RegistrationPage() {
@@ -73,6 +74,10 @@ export default function RegistrationPage() {
                     />
                     <span className="text-sm font-medium">Continue with Google</span>
                 </button>
+
+                <p className="text-center text-sm">
+                    Have an account yet? <Link href="/" className="font-semibold hover:underline">Sign In</Link>
+                </p>
             </form>
         </div>
     )
